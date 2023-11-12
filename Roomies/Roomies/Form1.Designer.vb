@@ -25,10 +25,23 @@ Partial Class Form1
         TabControl1 = New TabControl()
         TabPage1 = New TabPage()
         DataGridView1 = New DataGridView()
+        Column1 = New DataGridViewTextBoxColumn()
+        Column2 = New DataGridViewTextBoxColumn()
+        Column3 = New DataGridViewTextBoxColumn()
+        Column4 = New DataGridViewTextBoxColumn()
         Button9 = New Button()
         Button6 = New Button()
         TabPage2 = New TabPage()
-        Button5 = New Button()
+        DataGridView3 = New DataGridView()
+        DataGridViewTextBoxColumn5 = New DataGridViewTextBoxColumn()
+        DataGridViewTextBoxColumn6 = New DataGridViewTextBoxColumn()
+        DataGridViewTextBoxColumn7 = New DataGridViewTextBoxColumn()
+        DataGridViewTextBoxColumn8 = New DataGridViewTextBoxColumn()
+        DataGridView2 = New DataGridView()
+        DataGridViewTextBoxColumn1 = New DataGridViewTextBoxColumn()
+        DataGridViewTextBoxColumn2 = New DataGridViewTextBoxColumn()
+        DataGridViewTextBoxColumn3 = New DataGridViewTextBoxColumn()
+        DataGridViewTextBoxColumn4 = New DataGridViewTextBoxColumn()
         Button3 = New Button()
         Button1 = New Button()
         Button8 = New Button()
@@ -43,44 +56,30 @@ Partial Class Form1
         Button11 = New Button()
         Button10 = New Button()
         TabPage4 = New TabPage()
-        Button17 = New Button()
-        Button16 = New Button()
-        Column1 = New DataGridViewTextBoxColumn()
-        Column2 = New DataGridViewTextBoxColumn()
-        Column3 = New DataGridViewTextBoxColumn()
-        Column4 = New DataGridViewTextBoxColumn()
-        DataGridView2 = New DataGridView()
-        DataGridViewTextBoxColumn1 = New DataGridViewTextBoxColumn()
-        DataGridViewTextBoxColumn2 = New DataGridViewTextBoxColumn()
-        DataGridViewTextBoxColumn3 = New DataGridViewTextBoxColumn()
-        DataGridViewTextBoxColumn4 = New DataGridViewTextBoxColumn()
-        DataGridView3 = New DataGridView()
-        DataGridViewTextBoxColumn5 = New DataGridViewTextBoxColumn()
-        DataGridViewTextBoxColumn6 = New DataGridViewTextBoxColumn()
-        DataGridViewTextBoxColumn7 = New DataGridViewTextBoxColumn()
-        DataGridViewTextBoxColumn8 = New DataGridViewTextBoxColumn()
-        DataGridView4 = New DataGridView()
         DataGridView5 = New DataGridView()
-        Column5 = New DataGridViewTextBoxColumn()
-        Column6 = New DataGridViewTextBoxColumn()
-        Column7 = New DataGridViewTextBoxColumn()
-        Column8 = New DataGridViewTextBoxColumn()
         Column9 = New DataGridViewTextBoxColumn()
         Column10 = New DataGridViewTextBoxColumn()
         Column11 = New DataGridViewTextBoxColumn()
         Column12 = New DataGridViewTextBoxColumn()
         Column13 = New DataGridViewTextBoxColumn()
         Column14 = New DataGridViewTextBoxColumn()
+        DataGridView4 = New DataGridView()
+        Column5 = New DataGridViewTextBoxColumn()
+        Column6 = New DataGridViewTextBoxColumn()
+        Column7 = New DataGridViewTextBoxColumn()
+        Column8 = New DataGridViewTextBoxColumn()
+        Button17 = New Button()
+        Button16 = New Button()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         TabPage2.SuspendLayout()
+        CType(DataGridView3, ComponentModel.ISupportInitialize).BeginInit()
+        CType(DataGridView2, ComponentModel.ISupportInitialize).BeginInit()
         TabPage3.SuspendLayout()
         TabPage4.SuspendLayout()
-        CType(DataGridView2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(DataGridView3, ComponentModel.ISupportInitialize).BeginInit()
-        CType(DataGridView4, ComponentModel.ISupportInitialize).BeginInit()
         CType(DataGridView5, ComponentModel.ISupportInitialize).BeginInit()
+        CType(DataGridView4, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' TabControl1
@@ -118,6 +117,26 @@ Partial Class Form1
         DataGridView1.Size = New Size(447, 666)
         DataGridView1.TabIndex = 4
         ' 
+        ' Column1
+        ' 
+        Column1.HeaderText = "Chore"
+        Column1.Name = "Column1"
+        ' 
+        ' Column2
+        ' 
+        Column2.HeaderText = "deadline"
+        Column2.Name = "Column2"
+        ' 
+        ' Column3
+        ' 
+        Column3.HeaderText = "effort rating"
+        Column3.Name = "Column3"
+        ' 
+        ' Column4
+        ' 
+        Column4.HeaderText = "Status"
+        Column4.Name = "Column4"
+        ' 
         ' Button9
         ' 
         Button9.Font = New Font("Segoe UI", 29F, FontStyle.Regular, GraphicsUnit.Point)
@@ -142,7 +161,6 @@ Partial Class Form1
         ' 
         TabPage2.Controls.Add(DataGridView3)
         TabPage2.Controls.Add(DataGridView2)
-        TabPage2.Controls.Add(Button5)
         TabPage2.Controls.Add(Button3)
         TabPage2.Controls.Add(Button1)
         TabPage2.Controls.Add(Button8)
@@ -157,47 +175,98 @@ Partial Class Form1
         TabPage2.Text = "Chores"
         TabPage2.UseVisualStyleBackColor = True
         ' 
-        ' Button5
+        ' DataGridView3
         ' 
-        Button5.Location = New Point(24, 22)
-        Button5.Name = "Button5"
-        Button5.Size = New Size(58, 49)
-        Button5.TabIndex = 14
-        Button5.Text = "History"
-        Button5.UseVisualStyleBackColor = True
+        DataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView3.Columns.AddRange(New DataGridViewColumn() {DataGridViewTextBoxColumn5, DataGridViewTextBoxColumn6, DataGridViewTextBoxColumn7, DataGridViewTextBoxColumn8})
+        DataGridView3.Location = New Point(25, 607)
+        DataGridView3.Name = "DataGridView3"
+        DataGridView3.RowTemplate.Height = 25
+        DataGridView3.Size = New Size(447, 328)
+        DataGridView3.TabIndex = 18
+        ' 
+        ' DataGridViewTextBoxColumn5
+        ' 
+        DataGridViewTextBoxColumn5.HeaderText = "Chore"
+        DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        ' 
+        ' DataGridViewTextBoxColumn6
+        ' 
+        DataGridViewTextBoxColumn6.HeaderText = "deadline"
+        DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        ' 
+        ' DataGridViewTextBoxColumn7
+        ' 
+        DataGridViewTextBoxColumn7.HeaderText = "effort rating"
+        DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        ' 
+        ' DataGridViewTextBoxColumn8
+        ' 
+        DataGridViewTextBoxColumn8.HeaderText = "Status"
+        DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        ' 
+        ' DataGridView2
+        ' 
+        DataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView2.Columns.AddRange(New DataGridViewColumn() {DataGridViewTextBoxColumn1, DataGridViewTextBoxColumn2, DataGridViewTextBoxColumn3, DataGridViewTextBoxColumn4})
+        DataGridView2.Location = New Point(24, 205)
+        DataGridView2.Name = "DataGridView2"
+        DataGridView2.RowTemplate.Height = 25
+        DataGridView2.Size = New Size(447, 354)
+        DataGridView2.TabIndex = 17
+        ' 
+        ' DataGridViewTextBoxColumn1
+        ' 
+        DataGridViewTextBoxColumn1.HeaderText = "Chore"
+        DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        ' 
+        ' DataGridViewTextBoxColumn2
+        ' 
+        DataGridViewTextBoxColumn2.HeaderText = "deadline"
+        DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        ' 
+        ' DataGridViewTextBoxColumn3
+        ' 
+        DataGridViewTextBoxColumn3.HeaderText = "effort rating"
+        DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        ' 
+        ' DataGridViewTextBoxColumn4
+        ' 
+        DataGridViewTextBoxColumn4.HeaderText = "Status"
+        DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         ' 
         ' Button3
         ' 
-        Button3.Location = New Point(341, 22)
+        Button3.Location = New Point(247, 22)
         Button3.Name = "Button3"
-        Button3.Size = New Size(58, 49)
+        Button3.Size = New Size(110, 120)
         Button3.TabIndex = 13
         Button3.Text = "Modify Chore"
         Button3.UseVisualStyleBackColor = True
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(277, 22)
+        Button1.Location = New Point(133, 22)
         Button1.Name = "Button1"
-        Button1.Size = New Size(58, 49)
+        Button1.Size = New Size(110, 120)
         Button1.TabIndex = 12
         Button1.Text = "Delete Chore"
         Button1.UseVisualStyleBackColor = True
         ' 
         ' Button8
         ' 
-        Button8.Location = New Point(405, 22)
+        Button8.Location = New Point(362, 22)
         Button8.Name = "Button8"
-        Button8.Size = New Size(53, 49)
+        Button8.Size = New Size(110, 120)
         Button8.TabIndex = 11
         Button8.Text = "Assign Chore"
         Button8.UseVisualStyleBackColor = True
         ' 
         ' Button7
         ' 
-        Button7.Location = New Point(213, 22)
+        Button7.Location = New Point(22, 22)
         Button7.Name = "Button7"
-        Button7.Size = New Size(58, 49)
+        Button7.Size = New Size(110, 120)
         Button7.TabIndex = 10
         Button7.Text = "Create chore"
         Button7.UseVisualStyleBackColor = True
@@ -206,7 +275,7 @@ Partial Class Form1
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI", 29F, FontStyle.Regular, GraphicsUnit.Point)
-        Label6.Location = New Point(24, 491)
+        Label6.Location = New Point(24, 552)
         Label6.Name = "Label6"
         Label6.Size = New Size(108, 52)
         Label6.TabIndex = 3
@@ -216,7 +285,7 @@ Partial Class Form1
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI", 29F, FontStyle.Regular, GraphicsUnit.Point)
-        Label4.Location = New Point(24, 74)
+        Label4.Location = New Point(24, 145)
         Label4.Name = "Label4"
         Label4.Size = New Size(116, 52)
         Label4.TabIndex = 1
@@ -240,9 +309,9 @@ Partial Class Form1
         ' Button15
         ' 
         Button15.Font = New Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point)
-        Button15.Location = New Point(137, 24)
+        Button15.Location = New Point(134, 28)
         Button15.Name = "Button15"
-        Button15.Size = New Size(103, 124)
+        Button15.Size = New Size(113, 120)
         Button15.TabIndex = 5
         Button15.Text = "Remove expense"
         Button15.UseVisualStyleBackColor = True
@@ -250,9 +319,9 @@ Partial Class Form1
         ' Button14
         ' 
         Button14.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Button14.Location = New Point(246, 24)
+        Button14.Location = New Point(250, 28)
         Button14.Name = "Button14"
-        Button14.Size = New Size(115, 124)
+        Button14.Size = New Size(113, 120)
         Button14.TabIndex = 4
         Button14.Text = "Assign expense"
         Button14.UseVisualStyleBackColor = True
@@ -262,7 +331,7 @@ Partial Class Form1
         Button13.Font = New Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point)
         Button13.Location = New Point(18, 28)
         Button13.Name = "Button13"
-        Button13.Size = New Size(113, 120)
+        Button13.Size = New Size(110, 120)
         Button13.TabIndex = 3
         Button13.Text = "Create expense"
         Button13.UseVisualStyleBackColor = True
@@ -270,9 +339,9 @@ Partial Class Form1
         ' Button12
         ' 
         Button12.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Button12.Location = New Point(367, 24)
+        Button12.Location = New Point(365, 28)
         Button12.Name = "Button12"
-        Button12.Size = New Size(111, 124)
+        Button12.Size = New Size(113, 120)
         Button12.TabIndex = 2
         Button12.Text = "Record expense"
         Button12.UseVisualStyleBackColor = True
@@ -310,117 +379,6 @@ Partial Class Form1
         TabPage4.Text = "History"
         TabPage4.UseVisualStyleBackColor = True
         ' 
-        ' Button17
-        ' 
-        Button17.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Button17.Location = New Point(22, 446)
-        Button17.Name = "Button17"
-        Button17.Size = New Size(451, 34)
-        Button17.TabIndex = 1
-        Button17.Text = "Expenses"
-        Button17.UseVisualStyleBackColor = True
-        ' 
-        ' Button16
-        ' 
-        Button16.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point)
-        Button16.Location = New Point(22, 18)
-        Button16.Name = "Button16"
-        Button16.Size = New Size(451, 49)
-        Button16.TabIndex = 0
-        Button16.Text = "Overview of chores "
-        Button16.UseVisualStyleBackColor = True
-        ' 
-        ' Column1
-        ' 
-        Column1.HeaderText = "Chore"
-        Column1.Name = "Column1"
-        ' 
-        ' Column2
-        ' 
-        Column2.HeaderText = "deadline"
-        Column2.Name = "Column2"
-        ' 
-        ' Column3
-        ' 
-        Column3.HeaderText = "effort rating"
-        Column3.Name = "Column3"
-        ' 
-        ' Column4
-        ' 
-        Column4.HeaderText = "Status"
-        Column4.Name = "Column4"
-        ' 
-        ' DataGridView2
-        ' 
-        DataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView2.Columns.AddRange(New DataGridViewColumn() {DataGridViewTextBoxColumn1, DataGridViewTextBoxColumn2, DataGridViewTextBoxColumn3, DataGridViewTextBoxColumn4})
-        DataGridView2.Location = New Point(24, 134)
-        DataGridView2.Name = "DataGridView2"
-        DataGridView2.RowTemplate.Height = 25
-        DataGridView2.Size = New Size(447, 354)
-        DataGridView2.TabIndex = 17
-        ' 
-        ' DataGridViewTextBoxColumn1
-        ' 
-        DataGridViewTextBoxColumn1.HeaderText = "Chore"
-        DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        ' 
-        ' DataGridViewTextBoxColumn2
-        ' 
-        DataGridViewTextBoxColumn2.HeaderText = "deadline"
-        DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        ' 
-        ' DataGridViewTextBoxColumn3
-        ' 
-        DataGridViewTextBoxColumn3.HeaderText = "effort rating"
-        DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        ' 
-        ' DataGridViewTextBoxColumn4
-        ' 
-        DataGridViewTextBoxColumn4.HeaderText = "Status"
-        DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        ' 
-        ' DataGridView3
-        ' 
-        DataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView3.Columns.AddRange(New DataGridViewColumn() {DataGridViewTextBoxColumn5, DataGridViewTextBoxColumn6, DataGridViewTextBoxColumn7, DataGridViewTextBoxColumn8})
-        DataGridView3.Location = New Point(25, 546)
-        DataGridView3.Name = "DataGridView3"
-        DataGridView3.RowTemplate.Height = 25
-        DataGridView3.Size = New Size(447, 328)
-        DataGridView3.TabIndex = 18
-        ' 
-        ' DataGridViewTextBoxColumn5
-        ' 
-        DataGridViewTextBoxColumn5.HeaderText = "Chore"
-        DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        ' 
-        ' DataGridViewTextBoxColumn6
-        ' 
-        DataGridViewTextBoxColumn6.HeaderText = "deadline"
-        DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        ' 
-        ' DataGridViewTextBoxColumn7
-        ' 
-        DataGridViewTextBoxColumn7.HeaderText = "effort rating"
-        DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        ' 
-        ' DataGridViewTextBoxColumn8
-        ' 
-        DataGridViewTextBoxColumn8.HeaderText = "Status"
-        DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        ' 
-        ' DataGridView4
-        ' 
-        DataGridView4.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
-        DataGridView4.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView4.Columns.AddRange(New DataGridViewColumn() {Column5, Column6, Column7, Column8})
-        DataGridView4.Location = New Point(22, 73)
-        DataGridView4.Name = "DataGridView4"
-        DataGridView4.RowTemplate.Height = 25
-        DataGridView4.Size = New Size(451, 367)
-        DataGridView4.TabIndex = 2
-        ' 
         ' DataGridView5
         ' 
         DataGridView5.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
@@ -431,26 +389,6 @@ Partial Class Form1
         DataGridView5.RowTemplate.Height = 25
         DataGridView5.Size = New Size(451, 333)
         DataGridView5.TabIndex = 3
-        ' 
-        ' Column5
-        ' 
-        Column5.HeaderText = "Chore"
-        Column5.Name = "Column5"
-        ' 
-        ' Column6
-        ' 
-        Column6.HeaderText = "finished date"
-        Column6.Name = "Column6"
-        ' 
-        ' Column7
-        ' 
-        Column7.HeaderText = "deadline"
-        Column7.Name = "Column7"
-        ' 
-        ' Column8
-        ' 
-        Column8.HeaderText = "Person"
-        Column8.Name = "Column8"
         ' 
         ' Column9
         ' 
@@ -482,6 +420,57 @@ Partial Class Form1
         Column14.HeaderText = "Person"
         Column14.Name = "Column14"
         ' 
+        ' DataGridView4
+        ' 
+        DataGridView4.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        DataGridView4.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView4.Columns.AddRange(New DataGridViewColumn() {Column5, Column6, Column7, Column8})
+        DataGridView4.Location = New Point(22, 73)
+        DataGridView4.Name = "DataGridView4"
+        DataGridView4.RowTemplate.Height = 25
+        DataGridView4.Size = New Size(451, 367)
+        DataGridView4.TabIndex = 2
+        ' 
+        ' Column5
+        ' 
+        Column5.HeaderText = "Chore"
+        Column5.Name = "Column5"
+        ' 
+        ' Column6
+        ' 
+        Column6.HeaderText = "finished date"
+        Column6.Name = "Column6"
+        ' 
+        ' Column7
+        ' 
+        Column7.HeaderText = "deadline"
+        Column7.Name = "Column7"
+        ' 
+        ' Column8
+        ' 
+        Column8.HeaderText = "Person"
+        Column8.Name = "Column8"
+        ' 
+        ' Button17
+        ' 
+        Button17.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Button17.Location = New Point(22, 446)
+        Button17.Name = "Button17"
+        Button17.Size = New Size(451, 34)
+        Button17.TabIndex = 1
+        Button17.Text = "Expenses"
+        Button17.UseVisualStyleBackColor = True
+        ' 
+        ' Button16
+        ' 
+        Button16.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        Button16.Location = New Point(22, 18)
+        Button16.Name = "Button16"
+        Button16.Size = New Size(451, 49)
+        Button16.TabIndex = 0
+        Button16.Text = "Overview of chores "
+        Button16.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -495,12 +484,12 @@ Partial Class Form1
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         TabPage2.ResumeLayout(False)
         TabPage2.PerformLayout()
+        CType(DataGridView3, ComponentModel.ISupportInitialize).EndInit()
+        CType(DataGridView2, ComponentModel.ISupportInitialize).EndInit()
         TabPage3.ResumeLayout(False)
         TabPage4.ResumeLayout(False)
-        CType(DataGridView2, ComponentModel.ISupportInitialize).EndInit()
-        CType(DataGridView3, ComponentModel.ISupportInitialize).EndInit()
-        CType(DataGridView4, ComponentModel.ISupportInitialize).EndInit()
         CType(DataGridView5, ComponentModel.ISupportInitialize).EndInit()
+        CType(DataGridView4, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -516,7 +505,6 @@ Partial Class Form1
     Friend WithEvents Button3 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents Button9 As Button
-    Friend WithEvents Button5 As Button
     Friend WithEvents Button10 As Button
     Friend WithEvents Button11 As Button
     Friend WithEvents Button12 As Button

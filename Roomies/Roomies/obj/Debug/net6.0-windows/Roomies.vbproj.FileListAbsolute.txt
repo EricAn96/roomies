@@ -22,3 +22,27 @@ C:\Users\Eric\OneDrive\Desktop\cps613\module\Roomies\Roomies\obj\Debug\net6.0-wi
 C:\Users\Eric\OneDrive\Desktop\cps613\module\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.ModifyChoreForm.resources
 C:\Users\Eric\OneDrive\Desktop\cps613\module\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.RecordExpenseForm.resources
 C:\Users\Eric\OneDrive\Desktop\cps613\module\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.RemoveExpenseForm.resources
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\bin\Debug\net6.0-windows\Roomies.exe
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\bin\Debug\net6.0-windows\Roomies.deps.json
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\bin\Debug\net6.0-windows\Roomies.runtimeconfig.json
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\bin\Debug\net6.0-windows\Roomies.dll
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\bin\Debug\net6.0-windows\Roomies.pdb
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.AssignChoreForm.resources
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.AssignExpenseForm.resources
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.CreateChoreForm.resources
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.CreateExpenseForm.resources
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.DeleteChoreForm.resources
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.Form1.resources
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.ModifyChoreForm.resources
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.RecordExpenseForm.resources
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.RemoveExpenseForm.resources
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.vbproj.GenerateResource.cache
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.AssemblyInfoInputs.cache
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.AssemblyInfo.vb
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.vbproj.CoreCompileInputs.cache
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.dll
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\refint\Roomies.dll
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.pdb
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.genruntimeconfig.cache
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\ref\Roomies.dll

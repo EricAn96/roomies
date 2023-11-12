@@ -1,26 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eric\\OneDrive\\Desktop\\cps613\\module\\Roomies\\Roomies\\Roomies.vbproj": {}
+    "C:\\Users\\Philip Law\\Documents\\School Stuffs\\A Uniii\\Sem5\\CPS 613\\Prototype\\Roomies\\Roomies\\Roomies.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\Eric\\OneDrive\\Desktop\\cps613\\module\\Roomies\\Roomies\\Roomies.vbproj": {
+    "C:\\Users\\Philip Law\\Documents\\School Stuffs\\A Uniii\\Sem5\\CPS 613\\Prototype\\Roomies\\Roomies\\Roomies.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eric\\OneDrive\\Desktop\\cps613\\module\\Roomies\\Roomies\\Roomies.vbproj",
+        "projectUniqueName": "C:\\Users\\Philip Law\\Documents\\School Stuffs\\A Uniii\\Sem5\\CPS 613\\Prototype\\Roomies\\Roomies\\Roomies.vbproj",
         "projectName": "Roomies",
-        "projectPath": "C:\\Users\\Eric\\OneDrive\\Desktop\\cps613\\module\\Roomies\\Roomies\\Roomies.vbproj",
-        "packagesPath": "C:\\Users\\Eric\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eric\\OneDrive\\Desktop\\cps613\\module\\Roomies\\Roomies\\obj\\",
+        "projectPath": "C:\\Users\\Philip Law\\Documents\\School Stuffs\\A Uniii\\Sem5\\CPS 613\\Prototype\\Roomies\\Roomies\\Roomies.vbproj",
+        "packagesPath": "C:\\Users\\Philip Law\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Philip Law\\Documents\\School Stuffs\\A Uniii\\Sem5\\CPS 613\\Prototype\\Roomies\\Roomies\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Eric\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Philip Law\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -49,24 +50,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.23, 6.0.23]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.23, 6.0.23]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.23, 6.0.23]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.23, 6.0.23]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -75,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
