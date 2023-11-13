@@ -2,7 +2,6 @@
     Private roomieList As New List(Of Roomie)()
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
         'Chores tab init()
         Add_Roomie("Philip")
         Add_Roomie("Eric")
@@ -50,5 +49,4 @@
         column.Name = name
         DGV.Columns.Add(column)
     End Sub
-
 End Class
