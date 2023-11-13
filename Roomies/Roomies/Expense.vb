@@ -5,7 +5,6 @@
     Public Property ActionDate As Date
     Public Property DueDate As Date
 
-
     Public Sub New(assignedRoomie As String, expenseName As String, amount As Single, dueDate As Date)
         Me.AssignedRoomie = assignedRoomie
         Me.ExpenseName = expenseName
