@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "owVAWGaPBGa66j84kHDxRnToZK5UvWepCch6K2SOCqavxiTNGTSpzZTglvehdrb39hTYo0BZRCq0EqEvWvTM/g==",
+  "dgSpecHash": "jIpxjAwa3drdDNWpGI2tw5DGZZqsvmm8BDZjj5yaF6iV+hXxJnOfPDubdysWXSgO7Lx0maMOqV0FtA2AA6KRvQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Philip Law\\Documents\\School Stuffs\\A Uniii\\Sem5\\CPS 613\\Prototype\\Roomies\\Roomies\\Roomies.vbproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Eric\\OneDrive\\Desktop\\cps613\\Roomies\\roomies\\Roomies\\Roomies\\Roomies.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Eric\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.23\\microsoft.windowsdesktop.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\Eric\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.23\\microsoft.netcore.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\Eric\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.23\\microsoft.aspnetcore.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\Eric\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.23\\microsoft.netcore.app.host.win-x64.6.0.23.nupkg.sha512"
+  ],
   "logs": []
 }

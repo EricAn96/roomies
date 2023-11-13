@@ -209,7 +209,7 @@ Partial Class Form1
         ' 
         DataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridView2.Columns.AddRange(New DataGridViewColumn() {DataGridViewTextBoxColumn1, DataGridViewTextBoxColumn2, DataGridViewTextBoxColumn3, DataGridViewTextBoxColumn4})
-        DataGridView2.Location = New Point(24, 205)
+        DataGridView2.Location = New Point(22, 195)
         DataGridView2.Name = "DataGridView2"
         DataGridView2.RowTemplate.Height = 25
         DataGridView2.Size = New Size(447, 354)
@@ -285,7 +285,7 @@ Partial Class Form1
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI", 29F, FontStyle.Regular, GraphicsUnit.Point)
-        Label4.Location = New Point(24, 145)
+        Label4.Location = New Point(16, 140)
         Label4.Name = "Label4"
         Label4.Size = New Size(116, 52)
         Label4.TabIndex = 1
