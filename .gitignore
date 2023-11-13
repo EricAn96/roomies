@@ -10,3 +10,7 @@ Roomies/Roomies/obj/Debug/net6.0-windows/Roomies.GeneratedMSBuildEditorConfig.ed
 Roomies/Roomies/obj/project.assets.json
 Roomies/Roomies/obj/project.nuget.cache
 Roomies/Roomies/obj/Roomies.vbproj.nuget.dgspec.json
+Roomies/.vs/
+.vs
+Roomies/Roomies/bin
+Roomies/Roomies/obj
