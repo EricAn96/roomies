@@ -32,7 +32,6 @@ C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomi
 C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.CreateChoreForm.resources
 C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.CreateExpenseForm.resources
 C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.DeleteChoreForm.resources
-C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.Form1.resources
 C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.ModifyChoreForm.resources
 C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.RecordExpenseForm.resources
 C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.RemoveExpenseForm.resources
@@ -46,3 +45,4 @@ C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomi
 C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.pdb
 C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.genruntimeconfig.cache
 C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\ref\Roomies.dll
+C:\Users\Philip Law\Documents\School Stuffs\A Uniii\Sem5\CPS 613\Prototype\Roomies\Roomies\obj\Debug\net6.0-windows\Roomies.App.resources

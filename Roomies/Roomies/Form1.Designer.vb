@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class App
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -24,13 +24,19 @@ Partial Class Form1
     Private Sub InitializeComponent()
         TabControl1 = New TabControl()
         TabPage1 = New TabPage()
-        DataGridView1 = New DataGridView()
-        Column1 = New DataGridViewTextBoxColumn()
-        Column2 = New DataGridViewTextBoxColumn()
-        Column3 = New DataGridViewTextBoxColumn()
-        Column4 = New DataGridViewTextBoxColumn()
-        Button9 = New Button()
-        Button6 = New Button()
+        Label3 = New Label()
+        Label2 = New Label()
+        Label1 = New Label()
+        HomeUserExpenseList = New DataGridView()
+        colHomeExpense = New DataGridViewTextBoxColumn()
+        colHomeExpenseDeadline = New DataGridViewTextBoxColumn()
+        colHomeExpenseCost = New DataGridViewTextBoxColumn()
+        colHomeExpenseStatus = New DataGridViewTextBoxColumn()
+        HomeUserChoreList = New DataGridView()
+        colHomeChore = New DataGridViewTextBoxColumn()
+        colHomeChoreDeadline = New DataGridViewTextBoxColumn()
+        colHomeChoreRating = New DataGridViewTextBoxColumn()
+        colHomeChoreStatus = New DataGridViewTextBoxColumn()
         TabPage2 = New TabPage()
         DataGridView3 = New DataGridView()
         DataGridViewTextBoxColumn5 = New DataGridViewTextBoxColumn()
@@ -56,30 +62,31 @@ Partial Class Form1
         Button11 = New Button()
         Button10 = New Button()
         TabPage4 = New TabPage()
-        DataGridView5 = New DataGridView()
-        Column9 = New DataGridViewTextBoxColumn()
-        Column10 = New DataGridViewTextBoxColumn()
-        Column11 = New DataGridViewTextBoxColumn()
-        Column12 = New DataGridViewTextBoxColumn()
-        Column13 = New DataGridViewTextBoxColumn()
-        Column14 = New DataGridViewTextBoxColumn()
-        DataGridView4 = New DataGridView()
-        Column5 = New DataGridViewTextBoxColumn()
-        Column6 = New DataGridViewTextBoxColumn()
-        Column7 = New DataGridViewTextBoxColumn()
-        Column8 = New DataGridViewTextBoxColumn()
-        Button17 = New Button()
-        Button16 = New Button()
+        Label7 = New Label()
+        Label5 = New Label()
+        HistoryExpenseList = New DataGridView()
+        colHistoryExpenseName = New DataGridViewTextBoxColumn()
+        colHistoryExpenseCost = New DataGridViewTextBoxColumn()
+        colHistoryExpectedCost = New DataGridViewTextBoxColumn()
+        colHistoryExpensePaid = New DataGridViewTextBoxColumn()
+        colHistoryExpenseDeadline = New DataGridViewTextBoxColumn()
+        colHistoryExpensePerson = New DataGridViewTextBoxColumn()
+        HistoryChoreList = New DataGridView()
+        colHistoryChoreName = New DataGridViewTextBoxColumn()
+        colHistoryChoreCompletion = New DataGridViewTextBoxColumn()
+        colHistoryChoreDeadline = New DataGridViewTextBoxColumn()
+        colHistoryChorePerson = New DataGridViewTextBoxColumn()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(HomeUserExpenseList, ComponentModel.ISupportInitialize).BeginInit()
+        CType(HomeUserChoreList, ComponentModel.ISupportInitialize).BeginInit()
         TabPage2.SuspendLayout()
         CType(DataGridView3, ComponentModel.ISupportInitialize).BeginInit()
         CType(DataGridView2, ComponentModel.ISupportInitialize).BeginInit()
         TabPage3.SuspendLayout()
         TabPage4.SuspendLayout()
-        CType(DataGridView5, ComponentModel.ISupportInitialize).BeginInit()
-        CType(DataGridView4, ComponentModel.ISupportInitialize).BeginInit()
+        CType(HistoryExpenseList, ComponentModel.ISupportInitialize).BeginInit()
+        CType(HistoryChoreList, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' TabControl1
@@ -96,9 +103,11 @@ Partial Class Form1
         ' 
         ' TabPage1
         ' 
-        TabPage1.Controls.Add(DataGridView1)
-        TabPage1.Controls.Add(Button9)
-        TabPage1.Controls.Add(Button6)
+        TabPage1.Controls.Add(Label3)
+        TabPage1.Controls.Add(Label2)
+        TabPage1.Controls.Add(Label1)
+        TabPage1.Controls.Add(HomeUserExpenseList)
+        TabPage1.Controls.Add(HomeUserChoreList)
         TabPage1.Location = New Point(4, 24)
         TabPage1.Name = "TabPage1"
         TabPage1.Padding = New Padding(3)
@@ -107,55 +116,101 @@ Partial Class Form1
         TabPage1.Text = "Home"
         TabPage1.UseVisualStyleBackColor = True
         ' 
-        ' DataGridView1
+        ' Label3
         ' 
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4})
-        DataGridView1.Location = New Point(28, 167)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.RowTemplate.Height = 25
-        DataGridView1.Size = New Size(447, 666)
-        DataGridView1.TabIndex = 4
+        Label3.Font = New Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label3.Location = New Point(28, 467)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(447, 67)
+        Label3.TabIndex = 9
+        Label3.Text = "Your Expenses"
+        Label3.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Column1
+        ' Label2
         ' 
-        Column1.HeaderText = "Chore"
-        Column1.Name = "Column1"
+        Label2.Font = New Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label2.Location = New Point(28, 97)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(447, 67)
+        Label2.TabIndex = 8
+        Label2.Text = "Your Chores"
+        Label2.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Column2
+        ' Label1
         ' 
-        Column2.HeaderText = "deadline"
-        Column2.Name = "Column2"
+        Label1.Font = New Font("Segoe UI", 29F, FontStyle.Regular, GraphicsUnit.Point)
+        Label1.Location = New Point(28, 17)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(447, 67)
+        Label1.TabIndex = 7
+        Label1.Text = "Hello User!"
+        Label1.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Column3
+        ' HomeUserExpenseList
         ' 
-        Column3.HeaderText = "effort rating"
-        Column3.Name = "Column3"
+        HomeUserExpenseList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        HomeUserExpenseList.Columns.AddRange(New DataGridViewColumn() {colHomeExpense, colHomeExpenseDeadline, colHomeExpenseCost, colHomeExpenseStatus})
+        HomeUserExpenseList.Location = New Point(28, 538)
+        HomeUserExpenseList.Name = "HomeUserExpenseList"
+        HomeUserExpenseList.RowTemplate.Height = 25
+        HomeUserExpenseList.ScrollBars = ScrollBars.Vertical
+        HomeUserExpenseList.Size = New Size(447, 295)
+        HomeUserExpenseList.TabIndex = 6
         ' 
-        ' Column4
+        ' colHomeExpense
         ' 
-        Column4.HeaderText = "Status"
-        Column4.Name = "Column4"
+        colHomeExpense.HeaderText = "Expense"
+        colHomeExpense.Name = "colHomeExpense"
         ' 
-        ' Button9
+        ' colHomeExpenseDeadline
         ' 
-        Button9.Font = New Font("Segoe UI", 29F, FontStyle.Regular, GraphicsUnit.Point)
-        Button9.Location = New Point(28, 17)
-        Button9.Name = "Button9"
-        Button9.Size = New Size(447, 67)
-        Button9.TabIndex = 3
-        Button9.Text = "Hello hihi"
-        Button9.UseVisualStyleBackColor = True
+        colHomeExpenseDeadline.HeaderText = "Deadline"
+        colHomeExpenseDeadline.Name = "colHomeExpenseDeadline"
         ' 
-        ' Button6
+        ' colHomeExpenseCost
         ' 
-        Button6.Font = New Font("Segoe UI", 29F, FontStyle.Regular, GraphicsUnit.Point)
-        Button6.Location = New Point(28, 106)
-        Button6.Name = "Button6"
-        Button6.Size = New Size(447, 55)
-        Button6.TabIndex = 2
-        Button6.Text = "Overview / Your List of chores and expenses"
-        Button6.UseVisualStyleBackColor = True
+        colHomeExpenseCost.HeaderText = "Cost"
+        colHomeExpenseCost.Name = "colHomeExpenseCost"
+        ' 
+        ' colHomeExpenseStatus
+        ' 
+        colHomeExpenseStatus.HeaderText = "Status"
+        colHomeExpenseStatus.Name = "colHomeExpenseStatus"
+        ' 
+        ' HomeUserChoreList
+        ' 
+        HomeUserChoreList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        HomeUserChoreList.Columns.AddRange(New DataGridViewColumn() {colHomeChore, colHomeChoreDeadline, colHomeChoreRating, colHomeChoreStatus})
+        HomeUserChoreList.Location = New Point(28, 167)
+        HomeUserChoreList.MultiSelect = False
+        HomeUserChoreList.Name = "HomeUserChoreList"
+        HomeUserChoreList.ReadOnly = True
+        HomeUserChoreList.RowHeadersWidth = 30
+        HomeUserChoreList.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        HomeUserChoreList.RowTemplate.Height = 25
+        HomeUserChoreList.ScrollBars = ScrollBars.Vertical
+        HomeUserChoreList.Size = New Size(447, 295)
+        HomeUserChoreList.TabIndex = 4
+        ' 
+        ' colHomeChore
+        ' 
+        colHomeChore.HeaderText = "Chore"
+        colHomeChore.Name = "colHomeChore"
+        ' 
+        ' colHomeChoreDeadline
+        ' 
+        colHomeChoreDeadline.HeaderText = "Deadline"
+        colHomeChoreDeadline.Name = "colHomeChoreDeadline"
+        ' 
+        ' colHomeChoreRating
+        ' 
+        colHomeChoreRating.HeaderText = "Effort Rating"
+        colHomeChoreRating.Name = "colHomeChoreRating"
+        ' 
+        ' colHomeChoreStatus
+        ' 
+        colHomeChoreStatus.HeaderText = "Status"
+        colHomeChoreStatus.Name = "colHomeChoreStatus"
         ' 
         ' TabPage2
         ' 
@@ -237,7 +292,7 @@ Partial Class Form1
         ' 
         ' Button3
         ' 
-        Button3.Location = New Point(247, 22)
+        Button3.Location = New Point(248, 22)
         Button3.Name = "Button3"
         Button3.Size = New Size(110, 120)
         Button3.TabIndex = 13
@@ -368,10 +423,10 @@ Partial Class Form1
         ' 
         ' TabPage4
         ' 
-        TabPage4.Controls.Add(DataGridView5)
-        TabPage4.Controls.Add(DataGridView4)
-        TabPage4.Controls.Add(Button17)
-        TabPage4.Controls.Add(Button16)
+        TabPage4.Controls.Add(Label7)
+        TabPage4.Controls.Add(Label5)
+        TabPage4.Controls.Add(HistoryExpenseList)
+        TabPage4.Controls.Add(HistoryChoreList)
         TabPage4.Location = New Point(4, 24)
         TabPage4.Name = "TabPage4"
         TabPage4.Size = New Size(494, 870)
@@ -379,117 +434,120 @@ Partial Class Form1
         TabPage4.Text = "History"
         TabPage4.UseVisualStyleBackColor = True
         ' 
-        ' DataGridView5
+        ' Label7
         ' 
-        DataGridView5.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
-        DataGridView5.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView5.Columns.AddRange(New DataGridViewColumn() {Column9, Column10, Column11, Column12, Column13, Column14})
-        DataGridView5.Location = New Point(22, 486)
-        DataGridView5.Name = "DataGridView5"
-        DataGridView5.RowTemplate.Height = 25
-        DataGridView5.Size = New Size(451, 333)
-        DataGridView5.TabIndex = 3
+        Label7.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label7.Location = New Point(22, 441)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(451, 42)
+        Label7.TabIndex = 10
+        Label7.Text = "Expenses"
+        Label7.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Column9
+        ' Label5
         ' 
-        Column9.HeaderText = "Expense"
-        Column9.Name = "Column9"
+        Label5.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label5.Location = New Point(22, 23)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(451, 42)
+        Label5.TabIndex = 9
+        Label5.Text = "Chore Overview"
+        Label5.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Column10
+        ' HistoryExpenseList
         ' 
-        Column10.HeaderText = "actual amount"
-        Column10.Name = "Column10"
+        HistoryExpenseList.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        HistoryExpenseList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        HistoryExpenseList.Columns.AddRange(New DataGridViewColumn() {colHistoryExpenseName, colHistoryExpenseCost, colHistoryExpectedCost, colHistoryExpensePaid, colHistoryExpenseDeadline, colHistoryExpensePerson})
+        HistoryExpenseList.Location = New Point(22, 486)
+        HistoryExpenseList.Name = "HistoryExpenseList"
+        HistoryExpenseList.RowTemplate.Height = 25
+        HistoryExpenseList.Size = New Size(451, 361)
+        HistoryExpenseList.TabIndex = 3
         ' 
-        ' Column11
+        ' colHistoryExpenseName
         ' 
-        Column11.HeaderText = "expected amount"
-        Column11.Name = "Column11"
+        colHistoryExpenseName.HeaderText = "Expense"
+        colHistoryExpenseName.Name = "colHistoryExpenseName"
         ' 
-        ' Column12
+        ' colHistoryExpenseCost
         ' 
-        Column12.HeaderText = "paid date"
-        Column12.Name = "Column12"
+        colHistoryExpenseCost.HeaderText = "Cost"
+        colHistoryExpenseCost.Name = "colHistoryExpenseCost"
         ' 
-        ' Column13
+        ' colHistoryExpectedCost
         ' 
-        Column13.HeaderText = "payment deadline"
-        Column13.Name = "Column13"
+        colHistoryExpectedCost.HeaderText = "Expected Cost"
+        colHistoryExpectedCost.Name = "colHistoryExpectedCost"
         ' 
-        ' Column14
+        ' colHistoryExpensePaid
         ' 
-        Column14.HeaderText = "Person"
-        Column14.Name = "Column14"
+        colHistoryExpensePaid.HeaderText = "Date Paid"
+        colHistoryExpensePaid.Name = "colHistoryExpensePaid"
         ' 
-        ' DataGridView4
+        ' colHistoryExpenseDeadline
         ' 
-        DataGridView4.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
-        DataGridView4.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView4.Columns.AddRange(New DataGridViewColumn() {Column5, Column6, Column7, Column8})
-        DataGridView4.Location = New Point(22, 73)
-        DataGridView4.Name = "DataGridView4"
-        DataGridView4.RowTemplate.Height = 25
-        DataGridView4.Size = New Size(451, 367)
-        DataGridView4.TabIndex = 2
+        colHistoryExpenseDeadline.HeaderText = "Deadline"
+        colHistoryExpenseDeadline.Name = "colHistoryExpenseDeadline"
         ' 
-        ' Column5
+        ' colHistoryExpensePerson
         ' 
-        Column5.HeaderText = "Chore"
-        Column5.Name = "Column5"
+        colHistoryExpensePerson.HeaderText = "Person"
+        colHistoryExpensePerson.Name = "colHistoryExpensePerson"
         ' 
-        ' Column6
+        ' HistoryChoreList
         ' 
-        Column6.HeaderText = "finished date"
-        Column6.Name = "Column6"
+        HistoryChoreList.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        HistoryChoreList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        HistoryChoreList.Columns.AddRange(New DataGridViewColumn() {colHistoryChoreName, colHistoryChoreCompletion, colHistoryChoreDeadline, colHistoryChorePerson})
+        HistoryChoreList.Location = New Point(22, 71)
+        HistoryChoreList.Name = "HistoryChoreList"
+        HistoryChoreList.RowTemplate.Height = 25
+        HistoryChoreList.Size = New Size(451, 367)
+        HistoryChoreList.TabIndex = 2
         ' 
-        ' Column7
+        ' colHistoryChoreName
         ' 
-        Column7.HeaderText = "deadline"
-        Column7.Name = "Column7"
+        colHistoryChoreName.HeaderText = "Chore"
+        colHistoryChoreName.Name = "colHistoryChoreName"
         ' 
-        ' Column8
+        ' colHistoryChoreCompletion
         ' 
-        Column8.HeaderText = "Person"
-        Column8.Name = "Column8"
+        colHistoryChoreCompletion.HeaderText = "Completion Date"
+        colHistoryChoreCompletion.Name = "colHistoryChoreCompletion"
         ' 
-        ' Button17
+        ' colHistoryChoreDeadline
         ' 
-        Button17.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Button17.Location = New Point(22, 446)
-        Button17.Name = "Button17"
-        Button17.Size = New Size(451, 34)
-        Button17.TabIndex = 1
-        Button17.Text = "Expenses"
-        Button17.UseVisualStyleBackColor = True
+        colHistoryChoreDeadline.HeaderText = "Deadline"
+        colHistoryChoreDeadline.Name = "colHistoryChoreDeadline"
         ' 
-        ' Button16
+        ' colHistoryChorePerson
         ' 
-        Button16.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point)
-        Button16.Location = New Point(22, 18)
-        Button16.Name = "Button16"
-        Button16.Size = New Size(451, 49)
-        Button16.TabIndex = 0
-        Button16.Text = "Overview of chores "
-        Button16.UseVisualStyleBackColor = True
+        colHistoryChorePerson.HeaderText = "Person"
+        colHistoryChorePerson.Name = "colHistoryChorePerson"
         ' 
-        ' Form1
+        ' App
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(515, 910)
         Controls.Add(TabControl1)
-        Name = "Form1"
-        Text = "Form1"
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
+        Name = "App"
+        Text = "Roomies"
         TabControl1.ResumeLayout(False)
         TabPage1.ResumeLayout(False)
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        CType(HomeUserExpenseList, ComponentModel.ISupportInitialize).EndInit()
+        CType(HomeUserChoreList, ComponentModel.ISupportInitialize).EndInit()
         TabPage2.ResumeLayout(False)
         TabPage2.PerformLayout()
         CType(DataGridView3, ComponentModel.ISupportInitialize).EndInit()
         CType(DataGridView2, ComponentModel.ISupportInitialize).EndInit()
         TabPage3.ResumeLayout(False)
         TabPage4.ResumeLayout(False)
-        CType(DataGridView5, ComponentModel.ISupportInitialize).EndInit()
-        CType(DataGridView4, ComponentModel.ISupportInitialize).EndInit()
+        CType(HistoryExpenseList, ComponentModel.ISupportInitialize).EndInit()
+        CType(HistoryChoreList, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -504,21 +562,13 @@ Partial Class Form1
     Friend WithEvents Button7 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button9 As Button
     Friend WithEvents Button10 As Button
     Friend WithEvents Button11 As Button
     Friend WithEvents Button12 As Button
     Friend WithEvents Button15 As Button
     Friend WithEvents Button14 As Button
     Friend WithEvents Button13 As Button
-    Friend WithEvents Button17 As Button
-    Friend WithEvents Button16 As Button
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents HomeUserChoreList As DataGridView
     Friend WithEvents DataGridView3 As DataGridView
     Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
@@ -529,16 +579,30 @@ Partial Class Form1
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridView5 As DataGridView
-    Friend WithEvents DataGridView4 As DataGridView
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
-    Friend WithEvents Column7 As DataGridViewTextBoxColumn
-    Friend WithEvents Column8 As DataGridViewTextBoxColumn
-    Friend WithEvents Column9 As DataGridViewTextBoxColumn
-    Friend WithEvents Column10 As DataGridViewTextBoxColumn
-    Friend WithEvents Column11 As DataGridViewTextBoxColumn
-    Friend WithEvents Column12 As DataGridViewTextBoxColumn
-    Friend WithEvents Column13 As DataGridViewTextBoxColumn
-    Friend WithEvents Column14 As DataGridViewTextBoxColumn
+    Friend WithEvents HistoryExpenseList As DataGridView
+    Friend WithEvents HistoryChoreList As DataGridView
+    Friend WithEvents HomeUserExpenseList As DataGridView
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents colHomeChore As DataGridViewTextBoxColumn
+    Friend WithEvents colHomeChoreDeadline As DataGridViewTextBoxColumn
+    Friend WithEvents colHomeChoreRating As DataGridViewTextBoxColumn
+    Friend WithEvents colHomeChoreStatus As DataGridViewTextBoxColumn
+    Friend WithEvents colHistoryExpenseName As DataGridViewTextBoxColumn
+    Friend WithEvents colHistoryExpenseCost As DataGridViewTextBoxColumn
+    Friend WithEvents colHistoryExpectedCost As DataGridViewTextBoxColumn
+    Friend WithEvents colHistoryExpensePaid As DataGridViewTextBoxColumn
+    Friend WithEvents colHistoryExpenseDeadline As DataGridViewTextBoxColumn
+    Friend WithEvents colHistoryExpensePerson As DataGridViewTextBoxColumn
+    Friend WithEvents colHistoryChoreName As DataGridViewTextBoxColumn
+    Friend WithEvents colHistoryChoreCompletion As DataGridViewTextBoxColumn
+    Friend WithEvents colHistoryChoreDeadline As DataGridViewTextBoxColumn
+    Friend WithEvents colHistoryChorePerson As DataGridViewTextBoxColumn
+    Friend WithEvents colHomeExpense As DataGridViewTextBoxColumn
+    Friend WithEvents colHomeExpenseDeadline As DataGridViewTextBoxColumn
+    Friend WithEvents colHomeExpenseCost As DataGridViewTextBoxColumn
+    Friend WithEvents colHomeExpenseStatus As DataGridViewTextBoxColumn
 End Class
