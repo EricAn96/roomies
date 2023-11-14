@@ -38,29 +38,15 @@ Partial Class App
         colHomeChoreRating = New DataGridViewTextBoxColumn()
         colHomeChoreStatus = New DataGridViewTextBoxColumn()
         TabPage2 = New TabPage()
-        DataGridView3 = New DataGridView()
-        DataGridViewTextBoxColumn5 = New DataGridViewTextBoxColumn()
-        DataGridViewTextBoxColumn6 = New DataGridViewTextBoxColumn()
-        DataGridViewTextBoxColumn7 = New DataGridViewTextBoxColumn()
-        DataGridViewTextBoxColumn8 = New DataGridViewTextBoxColumn()
-        DataGridView2 = New DataGridView()
-        DataGridViewTextBoxColumn1 = New DataGridViewTextBoxColumn()
-        DataGridViewTextBoxColumn2 = New DataGridViewTextBoxColumn()
-        DataGridViewTextBoxColumn3 = New DataGridViewTextBoxColumn()
-        DataGridViewTextBoxColumn4 = New DataGridViewTextBoxColumn()
         Button3 = New Button()
         Button1 = New Button()
         Button8 = New Button()
         Button7 = New Button()
-        Label6 = New Label()
-        Label4 = New Label()
         TabPage3 = New TabPage()
-        Button15 = New Button()
-        Button14 = New Button()
-        Button13 = New Button()
-        Button12 = New Button()
-        Button11 = New Button()
-        Button10 = New Button()
+        RemoveExpense = New Button()
+        AssignExpense = New Button()
+        CreateExpense = New Button()
+        RecordExpense = New Button()
         TabPage4 = New TabPage()
         Label7 = New Label()
         Label5 = New Label()
@@ -81,8 +67,6 @@ Partial Class App
         CType(HomeUserExpenseList, ComponentModel.ISupportInitialize).BeginInit()
         CType(HomeUserChoreList, ComponentModel.ISupportInitialize).BeginInit()
         TabPage2.SuspendLayout()
-        CType(DataGridView3, ComponentModel.ISupportInitialize).BeginInit()
-        CType(DataGridView2, ComponentModel.ISupportInitialize).BeginInit()
         TabPage3.SuspendLayout()
         TabPage4.SuspendLayout()
         CType(HistoryExpenseList, ComponentModel.ISupportInitialize).BeginInit()
@@ -138,7 +122,7 @@ Partial Class App
         ' 
         ' Label1
         ' 
-        Label1.Font = New Font("Segoe UI", 29F, FontStyle.Regular, GraphicsUnit.Point)
+        Label1.Font = New Font("Segoe UI", 29.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label1.Location = New Point(28, 17)
         Label1.Name = "Label1"
         Label1.Size = New Size(447, 67)
@@ -214,14 +198,10 @@ Partial Class App
         ' 
         ' TabPage2
         ' 
-        TabPage2.Controls.Add(DataGridView3)
-        TabPage2.Controls.Add(DataGridView2)
         TabPage2.Controls.Add(Button3)
         TabPage2.Controls.Add(Button1)
         TabPage2.Controls.Add(Button8)
         TabPage2.Controls.Add(Button7)
-        TabPage2.Controls.Add(Label6)
-        TabPage2.Controls.Add(Label4)
         TabPage2.Location = New Point(4, 24)
         TabPage2.Name = "TabPage2"
         TabPage2.Padding = New Padding(3)
@@ -230,71 +210,11 @@ Partial Class App
         TabPage2.Text = "Chores"
         TabPage2.UseVisualStyleBackColor = True
         ' 
-        ' DataGridView3
-        ' 
-        DataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView3.Columns.AddRange(New DataGridViewColumn() {DataGridViewTextBoxColumn5, DataGridViewTextBoxColumn6, DataGridViewTextBoxColumn7, DataGridViewTextBoxColumn8})
-        DataGridView3.Location = New Point(25, 607)
-        DataGridView3.Name = "DataGridView3"
-        DataGridView3.RowTemplate.Height = 25
-        DataGridView3.Size = New Size(447, 328)
-        DataGridView3.TabIndex = 18
-        ' 
-        ' DataGridViewTextBoxColumn5
-        ' 
-        DataGridViewTextBoxColumn5.HeaderText = "Chore"
-        DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        ' 
-        ' DataGridViewTextBoxColumn6
-        ' 
-        DataGridViewTextBoxColumn6.HeaderText = "deadline"
-        DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        ' 
-        ' DataGridViewTextBoxColumn7
-        ' 
-        DataGridViewTextBoxColumn7.HeaderText = "effort rating"
-        DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        ' 
-        ' DataGridViewTextBoxColumn8
-        ' 
-        DataGridViewTextBoxColumn8.HeaderText = "Status"
-        DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        ' 
-        ' DataGridView2
-        ' 
-        DataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView2.Columns.AddRange(New DataGridViewColumn() {DataGridViewTextBoxColumn1, DataGridViewTextBoxColumn2, DataGridViewTextBoxColumn3, DataGridViewTextBoxColumn4})
-        DataGridView2.Location = New Point(24, 205)
-        DataGridView2.Name = "DataGridView2"
-        DataGridView2.RowTemplate.Height = 25
-        DataGridView2.Size = New Size(447, 354)
-        DataGridView2.TabIndex = 17
-        ' 
-        ' DataGridViewTextBoxColumn1
-        ' 
-        DataGridViewTextBoxColumn1.HeaderText = "Chore"
-        DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        ' 
-        ' DataGridViewTextBoxColumn2
-        ' 
-        DataGridViewTextBoxColumn2.HeaderText = "deadline"
-        DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        ' 
-        ' DataGridViewTextBoxColumn3
-        ' 
-        DataGridViewTextBoxColumn3.HeaderText = "effort rating"
-        DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        ' 
-        ' DataGridViewTextBoxColumn4
-        ' 
-        DataGridViewTextBoxColumn4.HeaderText = "Status"
-        DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        ' 
         ' Button3
         ' 
         Button3.Location = New Point(248, 22)
         Button3.Name = "Button3"
-        Button3.Size = New Size(110, 120)
+        Button3.Size = New Size(110, 49)
         Button3.TabIndex = 13
         Button3.Text = "Modify Chore"
         Button3.UseVisualStyleBackColor = True
@@ -303,7 +223,7 @@ Partial Class App
         ' 
         Button1.Location = New Point(133, 22)
         Button1.Name = "Button1"
-        Button1.Size = New Size(110, 120)
+        Button1.Size = New Size(110, 49)
         Button1.TabIndex = 12
         Button1.Text = "Delete Chore"
         Button1.UseVisualStyleBackColor = True
@@ -312,7 +232,7 @@ Partial Class App
         ' 
         Button8.Location = New Point(362, 22)
         Button8.Name = "Button8"
-        Button8.Size = New Size(110, 120)
+        Button8.Size = New Size(110, 49)
         Button8.TabIndex = 11
         Button8.Text = "Assign Chore"
         Button8.UseVisualStyleBackColor = True
@@ -321,39 +241,17 @@ Partial Class App
         ' 
         Button7.Location = New Point(22, 22)
         Button7.Name = "Button7"
-        Button7.Size = New Size(110, 120)
+        Button7.Size = New Size(110, 49)
         Button7.TabIndex = 10
         Button7.Text = "Create chore"
         Button7.UseVisualStyleBackColor = True
         ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.Font = New Font("Segoe UI", 29F, FontStyle.Regular, GraphicsUnit.Point)
-        Label6.Location = New Point(24, 552)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(108, 52)
-        Label6.TabIndex = 3
-        Label6.Text = "Iman"
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 29F, FontStyle.Regular, GraphicsUnit.Point)
-        Label4.Location = New Point(24, 145)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(116, 52)
-        Label4.TabIndex = 1
-        Label4.Text = "Philip"
-        ' 
         ' TabPage3
         ' 
-        TabPage3.Controls.Add(Button15)
-        TabPage3.Controls.Add(Button14)
-        TabPage3.Controls.Add(Button13)
-        TabPage3.Controls.Add(Button12)
-        TabPage3.Controls.Add(Button11)
-        TabPage3.Controls.Add(Button10)
+        TabPage3.Controls.Add(RemoveExpense)
+        TabPage3.Controls.Add(AssignExpense)
+        TabPage3.Controls.Add(CreateExpense)
+        TabPage3.Controls.Add(RecordExpense)
         TabPage3.Location = New Point(4, 24)
         TabPage3.Name = "TabPage3"
         TabPage3.Size = New Size(494, 870)
@@ -361,65 +259,45 @@ Partial Class App
         TabPage3.Text = "Expenses"
         TabPage3.UseVisualStyleBackColor = True
         ' 
-        ' Button15
+        ' RemoveExpense
         ' 
-        Button15.Font = New Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point)
-        Button15.Location = New Point(134, 28)
-        Button15.Name = "Button15"
-        Button15.Size = New Size(113, 120)
-        Button15.TabIndex = 5
-        Button15.Text = "Remove expense"
-        Button15.UseVisualStyleBackColor = True
+        RemoveExpense.Font = New Font("Segoe UI", 13.0F, FontStyle.Regular, GraphicsUnit.Point)
+        RemoveExpense.Location = New Point(134, 28)
+        RemoveExpense.Name = "RemoveExpense"
+        RemoveExpense.Size = New Size(113, 120)
+        RemoveExpense.TabIndex = 5
+        RemoveExpense.Text = "Remove expense"
+        RemoveExpense.UseVisualStyleBackColor = True
         ' 
-        ' Button14
+        ' AssignExpense
         ' 
-        Button14.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Button14.Location = New Point(250, 28)
-        Button14.Name = "Button14"
-        Button14.Size = New Size(113, 120)
-        Button14.TabIndex = 4
-        Button14.Text = "Assign expense"
-        Button14.UseVisualStyleBackColor = True
+        AssignExpense.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        AssignExpense.Location = New Point(250, 28)
+        AssignExpense.Name = "AssignExpense"
+        AssignExpense.Size = New Size(113, 120)
+        AssignExpense.TabIndex = 4
+        AssignExpense.Text = "Assign expense"
+        AssignExpense.UseVisualStyleBackColor = True
         ' 
-        ' Button13
+        ' CreateExpense
         ' 
-        Button13.Font = New Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point)
-        Button13.Location = New Point(18, 28)
-        Button13.Name = "Button13"
-        Button13.Size = New Size(110, 120)
-        Button13.TabIndex = 3
-        Button13.Text = "Create expense"
-        Button13.UseVisualStyleBackColor = True
+        CreateExpense.Font = New Font("Segoe UI", 13.0F, FontStyle.Regular, GraphicsUnit.Point)
+        CreateExpense.Location = New Point(18, 28)
+        CreateExpense.Name = "CreateExpense"
+        CreateExpense.Size = New Size(110, 120)
+        CreateExpense.TabIndex = 3
+        CreateExpense.Text = "Create expense"
+        CreateExpense.UseVisualStyleBackColor = True
         ' 
-        ' Button12
+        ' RecordExpense
         ' 
-        Button12.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Button12.Location = New Point(365, 28)
-        Button12.Name = "Button12"
-        Button12.Size = New Size(113, 120)
-        Button12.TabIndex = 2
-        Button12.Text = "Record expense"
-        Button12.UseVisualStyleBackColor = True
-        ' 
-        ' Button11
-        ' 
-        Button11.Font = New Font("Segoe UI", 29F, FontStyle.Regular, GraphicsUnit.Point)
-        Button11.Location = New Point(18, 241)
-        Button11.Name = "Button11"
-        Button11.Size = New Size(460, 598)
-        Button11.TabIndex = 1
-        Button11.Text = "break of the budget (balance sheet)"
-        Button11.UseVisualStyleBackColor = True
-        ' 
-        ' Button10
-        ' 
-        Button10.Font = New Font("Segoe UI", 29F, FontStyle.Regular, GraphicsUnit.Point)
-        Button10.Location = New Point(18, 167)
-        Button10.Name = "Button10"
-        Button10.Size = New Size(460, 68)
-        Button10.TabIndex = 0
-        Button10.Text = "total"
-        Button10.UseVisualStyleBackColor = True
+        RecordExpense.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        RecordExpense.Location = New Point(365, 28)
+        RecordExpense.Name = "RecordExpense"
+        RecordExpense.Size = New Size(113, 120)
+        RecordExpense.TabIndex = 2
+        RecordExpense.Text = "Record expense"
+        RecordExpense.UseVisualStyleBackColor = True
         ' 
         ' TabPage4
         ' 
@@ -528,7 +406,7 @@ Partial Class App
         ' 
         ' App
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(515, 910)
         Controls.Add(TabControl1)
@@ -541,9 +419,6 @@ Partial Class App
         CType(HomeUserExpenseList, ComponentModel.ISupportInitialize).EndInit()
         CType(HomeUserChoreList, ComponentModel.ISupportInitialize).EndInit()
         TabPage2.ResumeLayout(False)
-        TabPage2.PerformLayout()
-        CType(DataGridView3, ComponentModel.ISupportInitialize).EndInit()
-        CType(DataGridView2, ComponentModel.ISupportInitialize).EndInit()
         TabPage3.ResumeLayout(False)
         TabPage4.ResumeLayout(False)
         CType(HistoryExpenseList, ComponentModel.ISupportInitialize).EndInit()
@@ -554,21 +429,27 @@ Partial Class App
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label4 As Label
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents TabPage4 As TabPage
     Friend WithEvents Button8 As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button9 As Button
     Friend WithEvents Button10 As Button
     Friend WithEvents Button11 As Button
     Friend WithEvents Button12 As Button
     Friend WithEvents Button15 As Button
     Friend WithEvents Button14 As Button
     Friend WithEvents Button13 As Button
-    Friend WithEvents HomeUserChoreList As DataGridView
+    Friend WithEvents Button17 As Button
+    Friend WithEvents Button16 As Button
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridView3 As DataGridView
     Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
@@ -579,30 +460,16 @@ Partial Class App
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
-    Friend WithEvents HistoryExpenseList As DataGridView
-    Friend WithEvents HistoryChoreList As DataGridView
-    Friend WithEvents HomeUserExpenseList As DataGridView
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents colHomeChore As DataGridViewTextBoxColumn
-    Friend WithEvents colHomeChoreDeadline As DataGridViewTextBoxColumn
-    Friend WithEvents colHomeChoreRating As DataGridViewTextBoxColumn
-    Friend WithEvents colHomeChoreStatus As DataGridViewTextBoxColumn
-    Friend WithEvents colHistoryExpenseName As DataGridViewTextBoxColumn
-    Friend WithEvents colHistoryExpenseCost As DataGridViewTextBoxColumn
-    Friend WithEvents colHistoryExpectedCost As DataGridViewTextBoxColumn
-    Friend WithEvents colHistoryExpensePaid As DataGridViewTextBoxColumn
-    Friend WithEvents colHistoryExpenseDeadline As DataGridViewTextBoxColumn
-    Friend WithEvents colHistoryExpensePerson As DataGridViewTextBoxColumn
-    Friend WithEvents colHistoryChoreName As DataGridViewTextBoxColumn
-    Friend WithEvents colHistoryChoreCompletion As DataGridViewTextBoxColumn
-    Friend WithEvents colHistoryChoreDeadline As DataGridViewTextBoxColumn
-    Friend WithEvents colHistoryChorePerson As DataGridViewTextBoxColumn
-    Friend WithEvents colHomeExpense As DataGridViewTextBoxColumn
-    Friend WithEvents colHomeExpenseDeadline As DataGridViewTextBoxColumn
-    Friend WithEvents colHomeExpenseCost As DataGridViewTextBoxColumn
-    Friend WithEvents colHomeExpenseStatus As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridView5 As DataGridView
+    Friend WithEvents DataGridView4 As DataGridView
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
+    Friend WithEvents Column8 As DataGridViewTextBoxColumn
+    Friend WithEvents Column9 As DataGridViewTextBoxColumn
+    Friend WithEvents Column10 As DataGridViewTextBoxColumn
+    Friend WithEvents Column11 As DataGridViewTextBoxColumn
+    Friend WithEvents Column12 As DataGridViewTextBoxColumn
+    Friend WithEvents Column13 As DataGridViewTextBoxColumn
+    Friend WithEvents Column14 As DataGridViewTextBoxColumn
 End Class
